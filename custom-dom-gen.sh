@@ -36,8 +36,8 @@ cat >/etc/apache2/sites-available/gamestats2.gs.$domain.conf <<EOF
  
         ProxyPreserveHost On
  
-        ProxyPass / http://127.0.0.1:9002/
-        ProxyPassReverse / http://127.0.0.1:9002/
+        ProxyPass / http://192.168.0.38:9002/
+        ProxyPassReverse / http://192.168.0.38:9002/
 </VirtualHost>
 EOF
 
@@ -47,8 +47,8 @@ cat >/etc/apache2/sites-available/gamestats.gs.$domain.conf <<EOF
         ServerName gamestats.gs.$domain
         ServerAlias "gamestats.gs.$domain, gamestats.gs.$domain"
         ProxyPreserveHost On
-        ProxyPass / http://127.0.0.1:9002/
-        ProxyPassReverse / http://127.0.0.1:9002/
+        ProxyPass / http://192.168.0.38:9002/
+        ProxyPassReverse / http://192.168.0.38:9002/
 </VirtualHost>
 EOF
 
@@ -64,8 +64,8 @@ cat >/etc/apache2/sites-available/nas-naswii-dls1-conntest.$domain.conf <<EOF
         ServerAlias "conntest.$domain"
         ServerAlias "conntest.$domain, conntest.$domain"
         ProxyPreserveHost On
-        ProxyPass / http://127.0.0.1:9000/
-        ProxyPassReverse / http://127.0.0.1:9000/
+        ProxyPass / http://192.168.0.38:9000/
+        ProxyPassReverse / http://192.168.0.38:9000/
 </VirtualHost>
 EOF
 
@@ -77,7 +77,7 @@ cat >/etc/apache2/sites-available/sake.gs.$domain.conf <<EOF
         ServerAlias secure.sake.gs.$domain
         ServerAlias secure.sake.gs.$domain *.secure.sake.gs.$domain
  
-        ProxyPass / http://127.0.0.1:8000/
+        ProxyPass / http://192.168.0.38:8000/
  
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
