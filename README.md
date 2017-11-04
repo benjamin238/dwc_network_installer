@@ -1,3 +1,5 @@
+FOR VARONFI DO NOT USE!
+
 Want to set up your own DWC network server without doing all kinds of command line work?
 
 If the answer is yes, you've come to the right place!
